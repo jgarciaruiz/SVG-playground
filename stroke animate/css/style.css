@@ -1,0 +1,13 @@
+.thePath {
+  stroke-dasharray: 1200;
+  animation: border 5s linear;
+}
+
+@keyframes border {
+  0% {
+    stroke-dashoffset: 1200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
