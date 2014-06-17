@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Stroke</title>
+
+  <style>
+  .thePath {
+    stroke-linejoin: miter;/* miter, round, bevel */
+    stroke-linecap: square;/* butt, round, square */
+    stroke-dasharray: 1200;
+    -webkit-animation: border 5s linear infinite;
+  }
+
+  @-webkit-keyframes border {
+    0% {
+      stroke-dashoffset: 2400;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }  
+  </style>
+    <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="406px" height="406px" viewBox="0 0 406 406" enable-background="new 0 0 406 406" xml:space="preserve">
+  <rect class="thePath" fill="transparent" stroke="rgb(219, 78, 78)" stroke-width="6" x="100" y="100" stroke-miterlimit="10" width="300" height="300"></rect>
+</svg>
+
+</body>
+</html>
